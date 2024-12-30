@@ -1,0 +1,11 @@
+F:\sources\repos\SHSW.Akahu\bin\Debug\net8.0\SHSW.Akahu.deps.json
+F:\sources\repos\SHSW.Akahu\bin\Debug\net8.0\SHSW.Akahu.dll
+F:\sources\repos\SHSW.Akahu\bin\Debug\net8.0\SHSW.Akahu.pdb
+F:\sources\repos\SHSW.Akahu\obj\Debug\net8.0\SHSW.Akahu.GeneratedMSBuildEditorConfig.editorconfig
+F:\sources\repos\SHSW.Akahu\obj\Debug\net8.0\SHSW.Akahu.AssemblyInfoInputs.cache
+F:\sources\repos\SHSW.Akahu\obj\Debug\net8.0\SHSW.Akahu.AssemblyInfo.cs
+F:\sources\repos\SHSW.Akahu\obj\Debug\net8.0\SHSW.Akahu.csproj.CoreCompileInputs.cache
+F:\sources\repos\SHSW.Akahu\obj\Debug\net8.0\SHSW.Akahu.dll
+F:\sources\repos\SHSW.Akahu\obj\Debug\net8.0\refint\SHSW.Akahu.dll
+F:\sources\repos\SHSW.Akahu\obj\Debug\net8.0\SHSW.Akahu.pdb
+F:\sources\repos\SHSW.Akahu\obj\Debug\net8.0\ref\SHSW.Akahu.dll

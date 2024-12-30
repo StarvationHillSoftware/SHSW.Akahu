@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>SHSW.Akahu</PackageId>
+    <Title>Akahu interface for .NET</Title>
+    <Authors>Dominic Stove</Authors>
+    <Company>Starvation Hill Software</Company>
+  </PropertyGroup>
+
+</Project>
