@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Starvation Hill Software")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+126088c65f128a6934fd23b992e9de9e2511f508")]
 [assembly: System.Reflection.AssemblyProductAttribute("SHSW.Akahu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SHSW.Akahu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
