@@ -1,6 +1,6 @@
 # SHSW.Akahu
 
-SHSW.Akahu is a .NET 8 library for accessing the Akahu Open Finance APIs.
+SHSW.Akahu is a .NET 8 library for accessing the Akahu Open Finance APIs. (https://developers.akahu.nz/reference)
 This SDK is written in C# 12.
 
 ## Akahu API Accreditation
