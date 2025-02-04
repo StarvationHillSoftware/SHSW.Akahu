@@ -55,7 +55,7 @@ namespace SHSW.Akahu.Service
             return result;
         }
 
-        public async Task<List<Transaction>> GetTransactionsASync(string AccountId = "")
+        public async Task<List<Transaction>> GetTransactionsASync(string AccountId = "", DateTime? StartDate = null, DateTime? EndDate = null)
         {
             List<Transaction> result = new List<Transaction>();
             OpenConnection();
@@ -67,7 +67,21 @@ namespace SHSW.Akahu.Service
                 RequestString += "accounts/" + AccountId + "/";
             }
             RequestString += "transactions";
+            if (StartDate != null)
+            {
+                RequestString += "?start=" + StartDate.Value.ToString("yyyy-MM-ddTHH:mm:ssK");
+                if (EndDate != null)
+                {
+                    RequestString += "&end=" + EndDate.Value.ToString("yyyy-MM-ddTHH:mm:ssK");
+                }
+                else
+                {
+                    RequestString += "&end=" + DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ssK");
+                }
+
+            }
             var request = new HttpRequestMessage(HttpMethod.Get, RequestString);
+
             request.Headers.Add("Authorization", "Bearer " + _userToken);
             request.Headers.Add("X-Akahu-Id", _appToken);
 
@@ -125,6 +139,18 @@ namespace SHSW.Akahu.Service
             _handler.Proxy = proxy; 
         }
 
+        public async void RefreshAccounts()
+        {
+            using var httpClient = new HttpClient(_handler);
+            // Get Accounts...
+            var request = new HttpRequestMessage(HttpMethod.Post, "https://api.akahu.io/v1/refresh");
+            request.Headers.Add("Authorization", "Bearer " + _userToken);
+            request.Headers.Add("X-Akahu-Id", _appToken);
+            var response = await httpClient.SendAsync(request);
+            if (response.IsSuccessStatusCode)
+            {
+            }
+        }
 
         public void Dispose()
         {

@@ -18,8 +18,8 @@
         public DateTime updated_at { get; set; }
         public DateTime date { get; set; }
         public string description { get; set; }
-        public double amount { get; set; }
-        public double balance { get; set; }
+        public decimal amount { get; set; }
+        public decimal balance { get; set; }
         public string type { get; set; }
         public string hash { get; set; }
         public Meta meta { get; set; }
